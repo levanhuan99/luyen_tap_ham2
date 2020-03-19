@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    function checkWord(arr,word) {
+        let times=0;
+        for (let i=0;i<arr.length;i++){
+            if (word===arr[i]){
+                times++;
+            }
+        }
+        if (times!=0){
+            return times;
+        }else
+            return -1;
+
+    }
+    let array1=['le','van','huan'];
+    let word='le';
+    let check=checkWord(array1,word);
+    alert(check);
+
+</script>
+</html>
